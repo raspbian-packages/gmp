@@ -4012,7 +4012,7 @@ AC_OUTPUT(Makefile							\
   tests/mpf/Makefile tests/mpn/Makefile tests/mpq/Makefile		\
   tests/mpz/Makefile tests/rand/Makefile tests/misc/Makefile		\
   tests/cxx/Makefile							\
-  doc/Makefile tune/Makefile						\
+  tune/Makefile								\
   demos/Makefile demos/calc/Makefile demos/expr/Makefile		\
   gmp.h:gmp-h.in gmp.pc:gmp.pc.in gmpxx.pc:gmpxx.pc.in)
 
