@@ -1,0 +1,31 @@
+From: Bastian Germann <bage@debian.org>
+Date: Sat, 11 Jun 2022 22:37:49 +0200
+Forwarded: not-needed
+Description: Exclude doc/Makefile
+---
+diff --git a/Makefile.am b/Makefile.am
+index 1c24694..7b5e7eb 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -112,7 +112,7 @@ LIBGMPXX_LT_REVISION = 1
+ LIBGMPXX_LT_AGE      = 6
+ 
+ 
+-SUBDIRS = tests mpn mpz mpq mpf printf scanf rand cxx demos tune doc
++SUBDIRS = tests mpn mpz mpq mpf printf scanf rand cxx demos tune
+ 
+ EXTRA_DIST = configfsf.guess configfsf.sub .gdbinit INSTALL.autoconf \
+ 	     COPYING.LESSERv3 COPYINGv2 COPYINGv3
+diff --git a/configure.ac b/configure.ac
+index cafdb3c..1ac1aab 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -4012,7 +4012,7 @@ AC_OUTPUT(Makefile							\
+   tests/mpf/Makefile tests/mpn/Makefile tests/mpq/Makefile		\
+   tests/mpz/Makefile tests/rand/Makefile tests/misc/Makefile		\
+   tests/cxx/Makefile							\
+-  doc/Makefile tune/Makefile						\
++  tune/Makefile								\
+   demos/Makefile demos/calc/Makefile demos/expr/Makefile		\
+   gmp.h:gmp-h.in gmp.pc:gmp.pc.in gmpxx.pc:gmpxx.pc.in)
+ 
